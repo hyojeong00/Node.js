@@ -1,0 +1,206 @@
+<!DOCTYPE html> <!--DOM-->
+<html lang="ko">
+    <!---->
+    <head>
+        <meta charset="utf-8"> <!--모바일과 PC, PDA의 메타타입이 다름-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--모바일에 맞게-->
+        <!--우리팀 아이콘-->
+        <link rel="icon" href="../img/icons8_robot_64.png">
+        <title> WMSS-Welding Management SPC System</title>
+
+        <!--bootstrap-->
+        <link rel="stylesheet" href="../bootstrap/index_bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!--커스텀-->
+        <link rel="stylesheet" href="../bootstrap/index_bootstrap/css/owl.carousel.css">
+        <link rel="stylesheet" href="../bootstrap/index_bootstrap/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../bootstrap/index_bootstrap/css/style.css">
+        <script src="../bootstrap/index_bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <style>
+            #welcome {
+                font-size: 40px;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+        </style>
+
+    </head>
+    <!---->
+
+    <body id="page-top">
+            <!--네비-->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <a class="navbar-brand page-scroll" href="#page-top">
+                            <img src="../img/icons8_robot_64.png" alt="WMSS theme logo">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#">Monitoring</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#contact">Contact</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="../public/login.html">LOGIN</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--헤더-->
+            <header>
+                <div class="container">
+                    <div class="slider-container">
+                        <div class="intro-text">
+                            <div id="welcome">Welding Monitoring SPC System</div>
+                            <div class="intro-heading">용접 모니터링 시스템</div>
+                            <a href="./login.html" class="page-scroll btn btn-xl">LOGIN</a>
+                            <!--login.html로 연결-->
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!--쓸까말까-->
+            <section class="overlay-dark bg-img1 dark-bg short-section">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-3 md-sm-30">
+                            <div class="counter-item">
+                                <h2 data-count="00">0%</h2>
+                                <h6>가동률</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 md-sm-30">
+                            <div class="counter-item">
+                                <h2 data-count="00">0%</h2>
+                                <h6>불량률</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 md-sm-30">
+                            <div class="counter-item">
+                                <h2 data-count="34">34</h2>
+                                <h6>잔여재고</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 md-sm-30">
+                            <div class="counter-item">
+                                <h2 data-count="154">154</h2>
+                                <h6>안전재고</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--문의, 연락-->
+            <section id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="section-title">
+                                <h2>Contact Us</h2>
+                                <p>문의사항이 있으면 편하게 연락주세요</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h3>위치</h3>
+                            <p>부산광역시 사상구 모라동 <br>벤처타워 811</p>
+                            <p><i class="fa fa-phone"></i> 010-3432-4378</p>
+                            <p><i class="fa fa-envelop"></i> hj_kim94@daum.net</p>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h3>운영시간</h3>
+                            <p><i class="fa fa-clock-o"></i><span class="day">Weekdays : </span><span>9am to 6pm</span></p>
+                            <p><i class="fa fa-clock-o"></i><span class="day">Saturday : </span><span>9am to 1pm</span></p>
+                            <p><i class="fa fa-clock-o"></i><span class="day">Sunday : </span><span>Closed</span></p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <form name="sentMessage" id="contactForm" novalidate="">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control"
+                                            placeholder="이름을 입력하세요 *"
+                                            id="name" required=""
+                                            date-validation-required-message="이름을 입력하세요">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+
+                                    <div class=col-md-6>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control"
+                                            placeholder="연락처를 입력하세요 *"
+                                            id="email" required=""
+                                            data-validation-required-message="연락처를 입력하세요">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" 
+                                            placeholder="메세지를 입력하세요 *" id="message"
+                                            required=""
+                                            data-validation-required-message="메세지를 입력하세요"></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <div id="success"></div>
+                                        <button type="submit" class="btn">메세지 보내기</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--하단, footer-->
+            <p id="back-top">
+                <a href="#top"><i class="fa fa-angle-up"></i></a>
+            </p>
+            <footer>
+                <div class="container text-center">
+                    <p>Created by Team <a href="https://www.kfq.or.kr/"><span>WMSS</span></a></p>
+                </div>
+            </footer>
+
+        
+        <!---->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="../bootstrap/index_bootstrap/js/bootstrap.min.js"></script>
+        <script src="../bootstrap/index_bootstrap/js/owl.carousel.min.js"></script>
+        <script src="../bootstrap/index_bootstrap/js/cbpAnimatedHeader.js"></script>
+        <script src="../bootstrap/index_bootstrap/js/theme-scripts.js"></script>
+        <script src="../bootstrap/index_bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>

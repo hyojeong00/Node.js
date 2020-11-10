@@ -1,0 +1,169 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="prac3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>WMSS Welding Management SPC System</title>
+
+    <%--bootstrap css--%>
+    <link href="common/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font-awesome.min.css" rel="stylesheet" />
+    <link href="common/bootstrap/index_bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <%--css--%>
+    <link href="common/bootstrap/index_bootstrap/css/owl.carousel.css" rel="stylesheet" />
+    <link href="common/bootstrap/index_bootstrap/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="common/bootstrap/index_bootstrap/css/style.css" rel="stylesheet" />
+    <script src="common/bootstrap/index_bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <%--구글폰트--%>
+
+    <link href="googlefont.css" rel="stylesheet" />
+    <style>
+        #welcome {
+            font-size: 40px;
+            font-family: 'ISOCP', sans-serif; /*Josefin Sans*/
+        }
+    </style>
+
+    <%--내가쓰던 bootstrap--%>
+
+    <%--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>--%>
+
+    <%--내가쓰던 datatables--%>
+
+    <%--<link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    
+    <script src="datatables/js/jquery.dataTables.min.js"></script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page-top">
+    <form id="form1" runat="server">
+        <div>
+            <%--<nav class="navbar navbar-expand-lg navbar-light"> <%--네비바 내가 쓰던거--%
+                <a class="navbar-brand" href="#">
+                    <img src="images/icons8_robot_64.png" width="30" height="30" />Welding SPC System
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="homepage.aspx">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Line1</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Line2</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Line3</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Line4</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Line5</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <asp:LinkButton ID="LinkButton1" runat="server">View Lines</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton ID="LinkButton2" runat="server">Login</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton ID="LinkButton3" runat="server">Sign Up</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton ID="LinkButton4" runat="server">Logout</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton ID="LinkButton5" runat="server">반갑습니다</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </nav>--%> <%-- 내가 쓰던 네비 --%>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid text-center">
+                    <div class="nav-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/icons8_robot_64.png" alt="WMSS theme logo" />
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav right">
+                            <li>
+                                <a class="page-header" href="#">home</a>
+                            </li>
+                            <li>
+                                <a class="page-header" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav text-right">
+                            <li class="active top-right">
+                                <asp:LinkButton ID="LinkButton1" runat="server">Login</asp:LinkButton>
+                            </li>
+                            <li class="active top-right">
+                                <asp:LinkButton ID="LinkButton3" runat="server">Logout</asp:LinkButton>
+                            </li>
+                            <li class="active top-right">
+                                <asp:LinkButton ID="LinkButton2" runat="server">View Lines</asp:LinkButton>
+                            </li>
+                            <li class="active top-right">
+                                <asp:LinkButton ID="LinkButton4" runat="server">반갑습니다</asp:LinkButton>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="col">
+                <center>
+<img img width="150" height="150" src="imgs/welding.png" />
+                        </center>
+            </div>
+
+        </div>
+
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <p id="back-top">
+        <a href="#"><i class="fa fa-angle-up"></i></a>
+    </p>
+    <footer>
+        <div class="container text-center">
+            <p>Created by Team<a href="https://www.ktq.or.kr"><span>WMSS</span></a></p>
+        </div>
+    </footer>
+    <script src="2jquery.min.js"></script>
+    <script src="3jquery.easing.min.js"></script>
+    <script src="common/bootstrap/index_bootstrap/js/bootstrap.min.js"></script>
+    <script src="common/bootstrap/index_bootstrap/js/owl.carousel.min.js"></script>
+    <script src="common/bootstrap/index_bootstrap/js/cbpAnimatedHeader.js"></script>
+    <script src="common/bootstrap/index_bootstrap/js/theme-scripts.js"></script>
+    <script src="common/bootstrap/index_bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="1jquery.min.js"></script>
+
+</body>
+</html>

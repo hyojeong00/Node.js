@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--위 세줄은 건드리지 말것-->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="./img/icons8_robot_64.png">
+		<title>WMSS-Welding Management SPC System</title>
+		<!-- Bootstrap core CSS -->
+		<link href="./Main/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- 커스텀 -->
+		<link href="./Main/css/owl.carousel.css" rel="stylesheet">
+		<link href="./Main/css/owl.theme.default.min.css"  rel="stylesheet">
+		<link href="./Main/css/style.css" rel="stylesheet">
+		<script src="./Main/js/ie-emulation-modes-warning.js"></script>
+        <!--구글폰트사용-->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <style>
+            #welcome{font-size: 40px;font-family: 'Josefin Sans', sans-serif;}
+        </style>
+        <!--css안쓰고 바로 적용했음-->
+	</head>
+	<body id="page-top">
+		<!--네비게이션 -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<!-- 브랜드이미지, 로고 교체하기, 레퍼런스넣기-->
+				<div class="navbar-header page-scroll">
+					<a class="navbar-brand page-scroll" href="#page-top"><img src="./Main/images/logo.png" alt="Lattes theme logo"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Monitoring</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#contact">Contact</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="./Login/Login.html">LOGIN</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--움직이는 네비게이션바-->
+		</nav>
+        
+		<!-- 헤더, 슬라이더 /여러개 가능, 배경사진 넣어야 함-->
+		<header>
+			<div class="container" >
+				<div class="slider-container";>
+					<div class="intro-text" >
+						<div id="welcome">Welding Monitoring SPC System</div>
+						<div class="intro-heading">실시간 용접 모니터링 시스템</div>
+						<a href="./Login/Login.html" class="page-scroll btn btn-xl">LOGIN</a>
+                        <!--로그인html로 연결-->
+					</div>
+				</div>
+			</div>
+		</header>
+        
+        
+		<!--간략 보여주기 /쓸지 말지 고민-->
+		<section class="overlay-dark bg-img1 dark-bg short-section">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-md-3 mb-sm-30">
+						<div class="counter-item">
+							<h2 data-count="00">0%</h2>
+							<h6>가동률</h6>
+						</div>
+					</div>
+					<div class="col-md-3 mb-sm-30">
+						<div class="counter-item">
+							<h2 data-count="00">0%</h2>
+							<h6>불량률</h6>
+						</div>
+					</div>
+					<div class="col-md-3 mb-sm-30">
+						<div class="counter-item">
+							<h2 data-count="34">34</h2>
+							<h6>잔여재고</h6>
+						</div>
+					</div>
+					<div class="col-md-3 mb-sm-30">
+						<div class="counter-item">
+							<h2 data-count="154">154</h2>
+							<h6>안전재고</h6>
+						</div>
+					</div>      
+				</div>
+			</div>
+		</section>
+		
+		<!--문의, 연락-->
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2>Contact Us</h2>
+                            <p>문의사항이 있으시면 편하게 연락주세요</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<h3>위치</h3>
+                        <p>부산광역시 북구 사상구 모라 <br> 벤처타워 811</p>
+						<p><i class="fa fa-phone"></i> 010 3432 4378</p>
+						<p><i class="fa fa-envelope"></i> hj_kim94@daum.net</p>
+					</div>
+					<div class="col-md-3">
+						<h3>운영시간</h3>
+						<p><i class="fa fa-clock-o"></i> <span class="day">Weekdays:</span><span>9am to 6pm</span></p>
+						<p><i class="fa fa-clock-o"></i> <span class="day">Saturday:</span><span>9am to 1pm</span></p>
+						<p><i class="fa fa-clock-o"></i> <span class="day">Sunday:</span><span>Closed</span></p>
+					</div>
+					<div class="col-md-6">
+						<form name="sentMessage" id="contactForm" novalidate="">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="이름을 입력하세요 *" id="name" required="" data-validation-required-message="Please enter your name.">
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="연락처를 입력하세요 *" id="email" required="" data-validation-required-message="Please enter your email address.">
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="form-control" placeholder="메세지를 입력하세요*" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12 text-center">
+									<div id="success"></div>
+									<button type="submit" class="btn">메세지 보내기</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+        
+        
+        <!--하단-->
+		<p id="back-top">
+			<a href="#top"><i class="fa fa-angle-up"></i></a>
+		</p>
+		<footer>
+			<div class="container text-center">
+				<p>Created by Team <a href="https://www.kfq.or.kr/"><span>WMSS</span></a></p>
+			</div>
+		</footer>
+
+		
+		<!-- 부트스트랩 자바스크립트 소스-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/cbpAnimatedHeader.js"></script>
+		<script src="js/theme-scripts.js"></script>
+		<script src="js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+</html>

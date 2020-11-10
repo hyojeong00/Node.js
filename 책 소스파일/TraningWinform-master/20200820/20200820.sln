@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaskedTextBox control", "1\MaskedTextBox control.csproj", "{6BF9251B-9DB6-4378-AD32-B43B6427AB43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollBar control", "ScrollBar control\ScrollBar control.csproj", "{5914B1DA-A500-4A93-9363-224C3CFD56E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBox control", "ListBox control\ListBox control.csproj", "{B5F297C8-BFF4-4D36-B44B-A2A4603376FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBox control", "ComboBox control\ComboBox control.csproj", "{4F616C87-354C-4A68-AC22-8CE4B294D2B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timer control", "Timer control\Timer control.csproj", "{938D8622-E2DD-481E-917E-8EB4C8C7C804}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimePicker control", "DateTimePicker control\DateTimePicker control.csproj", "{09331947-1179-46E1-AD78-4449A3CEA3B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TapControl Form", "TapControl Form\TapControl Form.csproj", "{29F9A452-0748-4604-8982-37FAE4BC9AAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "make game", "make game\make game.csproj", "{041AA42A-7974-421F-ACEB-0C65DC317785}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BF9251B-9DB6-4378-AD32-B43B6427AB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF9251B-9DB6-4378-AD32-B43B6427AB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF9251B-9DB6-4378-AD32-B43B6427AB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF9251B-9DB6-4378-AD32-B43B6427AB43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5914B1DA-A500-4A93-9363-224C3CFD56E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5914B1DA-A500-4A93-9363-224C3CFD56E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5914B1DA-A500-4A93-9363-224C3CFD56E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5914B1DA-A500-4A93-9363-224C3CFD56E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F297C8-BFF4-4D36-B44B-A2A4603376FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F297C8-BFF4-4D36-B44B-A2A4603376FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F297C8-BFF4-4D36-B44B-A2A4603376FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F297C8-BFF4-4D36-B44B-A2A4603376FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F616C87-354C-4A68-AC22-8CE4B294D2B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F616C87-354C-4A68-AC22-8CE4B294D2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F616C87-354C-4A68-AC22-8CE4B294D2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F616C87-354C-4A68-AC22-8CE4B294D2B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938D8622-E2DD-481E-917E-8EB4C8C7C804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938D8622-E2DD-481E-917E-8EB4C8C7C804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938D8622-E2DD-481E-917E-8EB4C8C7C804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938D8622-E2DD-481E-917E-8EB4C8C7C804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09331947-1179-46E1-AD78-4449A3CEA3B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09331947-1179-46E1-AD78-4449A3CEA3B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09331947-1179-46E1-AD78-4449A3CEA3B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09331947-1179-46E1-AD78-4449A3CEA3B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F9A452-0748-4604-8982-37FAE4BC9AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F9A452-0748-4604-8982-37FAE4BC9AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F9A452-0748-4604-8982-37FAE4BC9AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F9A452-0748-4604-8982-37FAE4BC9AAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041AA42A-7974-421F-ACEB-0C65DC317785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041AA42A-7974-421F-ACEB-0C65DC317785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041AA42A-7974-421F-ACEB-0C65DC317785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041AA42A-7974-421F-ACEB-0C65DC317785}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE79E8B3-AF8F-48EC-9FCB-7314E0E254D3}
+	EndGlobalSection
+EndGlobal

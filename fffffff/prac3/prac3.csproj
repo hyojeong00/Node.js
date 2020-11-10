@@ -1,0 +1,594 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBE4CE3E-0919-4A7B-9FB7-66AAF4F918BE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>prac3</RootNamespace>
+    <AssemblyName>prac3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44391</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1jquery.min.js" />
+    <Content Include="2jquery.min.js" />
+    <Content Include="3jquery.easing.min.js" />
+    <Content Include="app.js" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\jquery-3.5.1.slim.min.js" />
+    <Content Include="bootstrap\js\popper.min.js" />
+    <Content Include="common\assets\brand\bootstrap-outline.svg" />
+    <Content Include="common\assets\brand\bootstrap-solid.svg" />
+    <Content Include="common\assets\dist\css\bootstrap-grid.css" />
+    <Content Include="common\assets\dist\css\bootstrap-grid.min.css" />
+    <Content Include="common\assets\dist\css\bootstrap-reboot.css" />
+    <Content Include="common\assets\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="common\assets\dist\css\bootstrap.css" />
+    <Content Include="common\assets\dist\css\bootstrap.min.css" />
+    <Content Include="common\assets\dist\js\bootstrap.bundle.js" />
+    <Content Include="common\assets\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="common\assets\dist\js\bootstrap.js" />
+    <Content Include="common\assets\dist\js\bootstrap.min.js" />
+    <Content Include="common\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="common\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="common\bootstrap\css\bootstrap.css" />
+    <Content Include="common\bootstrap\css\bootstrap.min.css" />
+    <Content Include="common\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="common\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="common\bootstrap\index_bootstrap\css\bootstrap-theme.css" />
+    <Content Include="common\bootstrap\index_bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="common\bootstrap\index_bootstrap\css\bootstrap.css" />
+    <Content Include="common\bootstrap\index_bootstrap\css\bootstrap.min.css" />
+    <Content Include="common\bootstrap\index_bootstrap\css\owl.carousel.css" />
+    <Content Include="common\bootstrap\index_bootstrap\css\owl.theme.default.min.css" />
+    <Content Include="common\bootstrap\index_bootstrap\css\style.css" />
+    <Content Include="common\bootstrap\index_bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\author-2.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\author-3.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\author-4.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\author-6.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\bg-main.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\office-bg.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\partners-1.png" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\partners-2.png" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\partners-3.png" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\partners-4.png" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\partners-5.png" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\partners-6.png" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\partners-7.png" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\portfolio-1.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\portfolio-2.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\portfolio-3.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\portfolio-4.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\portfolio-5.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\portfolio-6.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\portfolio-7.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\portfolio-8.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\demo\portfolio-9.jpg" />
+    <Content Include="common\bootstrap\index_bootstrap\images\logo.png" />
+    <Content Include="common\bootstrap\index_bootstrap\js\bootstrap.js" />
+    <Content Include="common\bootstrap\index_bootstrap\js\bootstrap.min.js" />
+    <Content Include="common\bootstrap\index_bootstrap\js\cbpAnimatedHeader.js" />
+    <Content Include="common\bootstrap\index_bootstrap\js\ie-emulation-modes-warning.js" />
+    <Content Include="common\bootstrap\index_bootstrap\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="common\bootstrap\index_bootstrap\js\npm.js" />
+    <Content Include="common\bootstrap\index_bootstrap\js\owl.carousel.min.js" />
+    <Content Include="common\bootstrap\index_bootstrap\js\theme-scripts.js" />
+    <Content Include="common\bootstrap\js\bootstrap.js" />
+    <Content Include="common\bootstrap\js\bootstrap.min.js" />
+    <Content Include="common\bootstrap\line_bootstrap\line.css" />
+    <Content Include="common\bootstrap\line_bootstrap\line.js" />
+    <Content Include="common\bootstrap\login_bootstrap\css\main.css" />
+    <Content Include="common\bootstrap\login_bootstrap\css\util.css" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\ubuntu\UFL.txt" />
+    <Content Include="common\bootstrap\login_bootstrap\images\bg-01.jpg" />
+    <Content Include="common\bootstrap\login_bootstrap\images\icons\favicon.ico" />
+    <Content Include="common\bootstrap\login_bootstrap\js\main.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\animate\animate.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\animsition\css\animsition.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\animsition\css\animsition.min.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\animsition\js\animsition.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\animsition\js\animsition.min.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\js\popper.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\countdowntime\countdowntime.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\daterangepicker\moment.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\daterangepicker\moment.min.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\select2\select2.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\select2\select2.js" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\select2\select2.min.css" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\select2\select2.min.js" />
+    <Content Include="common\bootstrap\menu_bootstrap\menu.css" />
+    <Content Include="common\css\BasicSet.css" />
+    <Content Include="common\css\Chart.css" />
+    <Content Include="common\css\common.css" />
+    <Content Include="common\js\boot\bootstrap.min.css" />
+    <Content Include="common\js\boot\bootstrap.min.js" />
+    <Content Include="common\js\chart\dist\Chart.bundle.js" />
+    <Content Include="common\js\chart\dist\Chart.bundle.min.js" />
+    <Content Include="common\js\chart\dist\Chart.css" />
+    <Content Include="common\js\chart\dist\Chart.js" />
+    <Content Include="common\js\chart\dist\Chart.min.css" />
+    <Content Include="common\js\chart\dist\Chart.min.js" />
+    <Content Include="common\js\cmnReady.js" />
+    <Content Include="common\js\common.js" />
+    <Content Include="common\js\commonGw.js" />
+    <Content Include="common\js\dashboard.js" />
+    <Content Include="common\js\frm.js" />
+    <Content Include="common\js\highcharts\adapters\standalone-framework.js" />
+    <Content Include="common\js\highcharts\adapters\standalone-framework.src.js" />
+    <Content Include="common\js\highcharts\highcharts-3d.js" />
+    <Content Include="common\js\highcharts\highcharts-3d.src.js" />
+    <Content Include="common\js\highcharts\highcharts-com.js" />
+    <Content Include="common\js\highcharts\highcharts-com.src.js" />
+    <Content Include="common\js\highcharts\highcharts-more.js" />
+    <Content Include="common\js\highcharts\highcharts-more.src.js" />
+    <Content Include="common\js\highcharts\highcharts.js" />
+    <Content Include="common\js\highcharts\highcharts.src.js" />
+    <Content Include="common\js\highcharts\modules\boost.js" />
+    <Content Include="common\js\highcharts\modules\boost.src.js" />
+    <Content Include="common\js\highcharts\modules\broken-axis.js" />
+    <Content Include="common\js\highcharts\modules\broken-axis.src.js" />
+    <Content Include="common\js\highcharts\modules\canvas-tools.js" />
+    <Content Include="common\js\highcharts\modules\canvas-tools.src.js" />
+    <Content Include="common\js\highcharts\modules\data.js" />
+    <Content Include="common\js\highcharts\modules\data.src.js" />
+    <Content Include="common\js\highcharts\modules\drilldown.js" />
+    <Content Include="common\js\highcharts\modules\drilldown.src.js" />
+    <Content Include="common\js\highcharts\modules\exporting.js" />
+    <Content Include="common\js\highcharts\modules\exporting.src.js" />
+    <Content Include="common\js\highcharts\modules\funnel.js" />
+    <Content Include="common\js\highcharts\modules\funnel.src.js" />
+    <Content Include="common\js\highcharts\modules\heatmap.js" />
+    <Content Include="common\js\highcharts\modules\heatmap.src.js" />
+    <Content Include="common\js\highcharts\modules\no-data-to-display.js" />
+    <Content Include="common\js\highcharts\modules\no-data-to-display.src.js" />
+    <Content Include="common\js\highcharts\modules\offline-exporting.js" />
+    <Content Include="common\js\highcharts\modules\offline-exporting.src.js" />
+    <Content Include="common\js\highcharts\modules\solid-gauge.js" />
+    <Content Include="common\js\highcharts\modules\solid-gauge.src.js" />
+    <Content Include="common\js\highcharts\modules\treemap.js" />
+    <Content Include="common\js\highcharts\modules\treemap.src.js" />
+    <Content Include="common\js\highcharts\themes\dark-blue.js" />
+    <Content Include="common\js\highcharts\themes\dark-green.js" />
+    <Content Include="common\js\highcharts\themes\dark-unica.js" />
+    <Content Include="common\js\highcharts\themes\gray.js" />
+    <Content Include="common\js\highcharts\themes\grid-light.js" />
+    <Content Include="common\js\highcharts\themes\grid.js" />
+    <Content Include="common\js\highcharts\themes\sand-signika.js" />
+    <Content Include="common\js\highcharts\themes\skies.js" />
+    <Content Include="common\js\jquery-1.11.3.min.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\.gitignore" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\dist\jquery.mask.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\dist\jquery.mask.min.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\Gruntfile.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\package.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\src\jquery.mask.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\jquery.mask.test.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\qunit.css" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\qunit.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\sinon-1.10.3.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\sinon-qunit-1.0.0.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\sinon-qunit.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\test-for-jquery-1.11.1.html" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\test-for-jquery-1.7.2.html" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\test-for-jquery-1.8.3.html" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\test-for-jquery-1.9.1.html" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\test-for-jquery-2.1.1.html" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\test-for-jquery-3.0.0.html" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\test-for-zepto.html" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\zepto\data.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\zepto\event.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\test\zepto\zepto.min.js" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\참조사이트.txt" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\external\jquery\jquery.js" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\index.html" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\jquery-ui.css" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\jquery-ui.js" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\jquery-ui.min.css" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\jquery-ui.min.js" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\jquery-ui.structure.css" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\jquery-ui.structure.min.css" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\jquery-ui.theme.css" />
+    <Content Include="common\js\jquery-ui-1.11.4.custom\jquery-ui.theme.min.css" />
+    <Content Include="common\js\jquery.blockUI.js" />
+    <Content Include="common\js\jquery.bxslider\images\bx_loader.gif" />
+    <Content Include="common\js\jquery.bxslider\images\controls.png" />
+    <Content Include="common\js\jquery.bxslider\jquery.bxslider.css" />
+    <Content Include="common\js\jquery.bxslider\jquery.bxslider.js" />
+    <Content Include="common\js\jquery.bxslider\jquery.bxslider.min.css" />
+    <Content Include="common\js\jquery.bxslider\jquery.bxslider.min.js" />
+    <Content Include="common\js\jquery.bxslider\vendor\jquery.easing.1.3.js" />
+    <Content Include="common\js\jquery.bxslider\vendor\jquery.fitvids.js" />
+    <Content Include="common\js\jquery.fileDownload.js" />
+    <Content Include="common\js\jquery.min.js" />
+    <Content Include="common\js\jquery.tablefix_1.0.0.js" />
+    <Content Include="common\js\lightbox2-master\.gitignore" />
+    <Content Include="common\js\lightbox2-master\dist\css\lightbox.css" />
+    <Content Include="common\js\lightbox2-master\dist\css\lightbox.min.css" />
+    <Content Include="common\js\lightbox2-master\dist\images\close.png" />
+    <Content Include="common\js\lightbox2-master\dist\images\loading.gif" />
+    <Content Include="common\js\lightbox2-master\dist\images\next.png" />
+    <Content Include="common\js\lightbox2-master\dist\images\prev.png" />
+    <Content Include="common\js\lightbox2-master\dist\js\lightbox-plus-jquery.js" />
+    <Content Include="common\js\lightbox2-master\dist\js\lightbox-plus-jquery.min.js" />
+    <Content Include="common\js\lightbox2-master\dist\js\lightbox.js" />
+    <Content Include="common\js\lightbox2-master\dist\js\lightbox.min.js" />
+    <Content Include="common\js\lightbox2-master\examples\index.html" />
+    <Content Include="common\js\lightbox2-master\Gruntfile.js" />
+    <Content Include="common\js\lightbox2-master\src\css\lightbox.css" />
+    <Content Include="common\js\lightbox2-master\src\images\close.png" />
+    <Content Include="common\js\lightbox2-master\src\images\loading.gif" />
+    <Content Include="common\js\lightbox2-master\src\images\next.png" />
+    <Content Include="common\js\lightbox2-master\src\images\prev.png" />
+    <Content Include="common\js\lightbox2-master\src\js\lightbox.js" />
+    <Content Include="common\js\loader.js" />
+    <Content Include="common\js\login.js" />
+    <Content Include="common\js\printThis.js" />
+    <Content Include="common\js\shortcut\jquery.shortcut-0.1.js" />
+    <Content Include="common\js\shortcut\shortcut.js" />
+    <Content Include="common\js\smartPop\img\btn_close.gif" />
+    <Content Include="common\js\smartPop\img\btn_close.png" />
+    <Content Include="common\js\smartPop\img\btn_close1.png" />
+    <Content Include="common\js\smartPop\img\btn_close2.png" />
+    <Content Include="common\js\smartPop\img\loading.gif" />
+    <Content Include="common\js\smartPop\jquery.smartPop.css" />
+    <Content Include="common\js\smartPop\jquery.smartPop.js" />
+    <Content Include="common\js\socket.io.js" />
+    <Content Include="config\config.js" />
+    <Content Include="config\database.js" />
+    <Content Include="config\property.js" />
+    <Content Include="config\route_loader.js" />
+    <Content Include="datatables\css\jquery.dataTables.min.css" />
+    <Content Include="datatables\js\jquery.dataTables.min.js" />
+    <Content Include="font-awesome.min.css" />
+    <Content Include="googlefont.css" />
+    <Content Include="highcharts.css" />
+    <Content Include="homepage.aspx" />
+    <Content Include="images\404_icon.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\clyton.jpg" />
+    <Content Include="images\error.jpeg" />
+    <Content Include="images\icons8_robot_64.png" />
+    <Content Include="images\logo.PNG" />
+    <Content Include="images\seah.png" />
+    <Content Include="images\searh_icon.png" />
+    <Content Include="images\warning.png" />
+    <Content Include="imgs\alermlist.png" />
+    <Content Include="imgs\background1.jpg" />
+    <Content Include="imgs\background2.jpg" />
+    <Content Include="imgs\hm_man.jpg" />
+    <Content Include="imgs\line1.png" />
+    <Content Include="imgs\line2.png" />
+    <Content Include="imgs\line3.png" />
+    <Content Include="imgs\line4.png" />
+    <Content Include="imgs\line5.png" />
+    <Content Include="imgs\manager.png" />
+    <Content Include="imgs\pngwing.com %282%29.png" />
+    <Content Include="imgs\welding.png" />
+    <Content Include="imgs\다운로드.jpg" />
+    <Content Include="imgs\대가리.png" />
+    <Content Include="imgs\맨위.PNG" />
+    <Content Include="imgs\이력서.jpg" />
+    <Content Include="highcharts.js" />
+    <Content Include="line1.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="line1.aspx.cs">
+      <DependentUpon>line1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="line1.aspx.designer.cs">
+      <DependentUpon>line1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="common\assets\dist\css\bootstrap-grid.css.map" />
+    <Content Include="common\assets\dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="common\assets\dist\css\bootstrap-reboot.css.map" />
+    <Content Include="common\assets\dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="common\assets\dist\css\bootstrap.css.map" />
+    <Content Include="common\assets\dist\css\bootstrap.min.css.map" />
+    <Content Include="common\assets\dist\js\bootstrap.bundle.js.map" />
+    <Content Include="common\assets\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="common\assets\dist\js\bootstrap.js.map" />
+    <Content Include="common\assets\dist\js\bootstrap.min.js.map" />
+    <Content Include="common\bootstrap\index_bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="common\bootstrap\index_bootstrap\css\bootstrap.css.map" />
+    <Content Include="common\bootstrap\index_bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="common\bootstrap\index_bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="common\bootstrap\index_bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="common\bootstrap\index_bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\ubuntu\Ubuntu-Bold.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\ubuntu\Ubuntu-BoldItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\ubuntu\Ubuntu-Italic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\ubuntu\Ubuntu-Light.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\ubuntu\Ubuntu-LightItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\ubuntu\Ubuntu-Medium.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\ubuntu\Ubuntu-MediumItalic.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\fonts\ubuntu\Ubuntu-Regular.ttf" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="common\bootstrap\login_bootstrap\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="common\css\font\notokr-black.eot" />
+    <Content Include="common\css\font\notokr-black.ttf" />
+    <Content Include="common\css\font\notokr-black.woff" />
+    <Content Include="common\css\font\notokr-black.woff2" />
+    <Content Include="common\css\font\notokr-bold.eot" />
+    <Content Include="common\css\font\notokr-bold.ttf" />
+    <Content Include="common\css\font\notokr-bold.woff2" />
+    <Content Include="common\css\font\notokr-regular.eot" />
+    <Content Include="common\css\font\notokr-regular.ttf" />
+    <Content Include="common\css\font\notokr-regular.woff" />
+    <Content Include="common\css\font\notokr-regular.woff2" />
+    <Content Include="common\css\font\notokr-thin.eot" />
+    <Content Include="common\css\font\notokr-thin.ttf" />
+    <Content Include="common\css\font\notokr-thin.woff2" />
+    <Content Include="common\js\chart\bower.json" />
+    <Content Include="common\js\chart\composer.json" />
+    <Content Include="common\js\chart\LICENSE.md" />
+    <Content Include="common\js\chart\package.json" />
+    <Content Include="common\js\chart\README.md" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\.jshintrc" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\.ruby-version" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\.travis.yml" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\bower.json" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\CHANGELOG.md" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\component.json" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\composer.json" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\CONTRIBUTING.md" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\deploy.rb" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\docker-compose.yml" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\Dockerfile" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\ISSUE_TEMPLATE.md" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\LICENSE" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\package-lock.json" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\package.json" />
+    <Content Include="common\js\jQuery-Mask-Plugin-master\README.md" />
+    <Content Include="common\js\jquery.bxslider\LICENSE.md" />
+    <Content Include="common\js\jquery.bxslider\README.md" />
+    <Content Include="common\js\lightbox2-master\.editorconfig" />
+    <Content Include="common\js\lightbox2-master\.jscsrc" />
+    <Content Include="common\js\lightbox2-master\.jshintrc" />
+    <Content Include="common\js\lightbox2-master\bower.json" />
+    <Content Include="common\js\lightbox2-master\CONTRIBUTING.md" />
+    <Content Include="common\js\lightbox2-master\DEPLOY.md" />
+    <Content Include="common\js\lightbox2-master\dist\js\lightbox-plus-jquery.min.map" />
+    <Content Include="common\js\lightbox2-master\dist\js\lightbox.min.map" />
+    <Content Include="common\js\lightbox2-master\LICENSE" />
+    <Content Include="common\js\lightbox2-master\package.json" />
+    <Content Include="common\js\lightbox2-master\README.md" />
+    <Content Include="common\js\lightbox2-master\ROADMAP.md" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9508</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44391/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

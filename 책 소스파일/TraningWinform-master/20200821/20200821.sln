@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Combobox Control", "Form1\Combobox Control.csproj", "{F5DC6730-A237-43C5-8C9B-A3A9A1457AB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book001", "Form2\Book001.csproj", "{EAEDE919-E1D6-4EB2-A42B-B36F047F38BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5DC6730-A237-43C5-8C9B-A3A9A1457AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5DC6730-A237-43C5-8C9B-A3A9A1457AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5DC6730-A237-43C5-8C9B-A3A9A1457AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5DC6730-A237-43C5-8C9B-A3A9A1457AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEDE919-E1D6-4EB2-A42B-B36F047F38BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEDE919-E1D6-4EB2-A42B-B36F047F38BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEDE919-E1D6-4EB2-A42B-B36F047F38BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEDE919-E1D6-4EB2-A42B-B36F047F38BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97D43BF5-C9C0-4DBB-8AD1-A007C6B7D039}
+	EndGlobalSection
+EndGlobal
